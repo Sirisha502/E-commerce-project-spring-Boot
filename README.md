@@ -195,7 +195,5 @@ This project currently does not have a license and is intended for educational/d
 
 Would you like me to generate this as a downloadable file or create a preview of how it will look on GitHub?
 ```
-# WorkFlow
-![image alt](https://github.com/Sirisha502/E-commerce-project-spring-Boot/blob/1882c3f49e4215185b3547ad6819a796eedbd9e7/239843711-69951cb7-65e2-4225-8681-2542859aaec6.png)
 
 
