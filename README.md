@@ -194,6 +194,94 @@ This project currently does not have a license and is intended for educational/d
 3. Commit and push to GitHub.
 
 Would you like me to generate this as a downloadable file or create a preview of how it will look on GitHub?
+```Here is the **GitHub `README.md` section code** you asked for, focused specifically on the **Controller, Model, View**, and **Endpoints** architecture of your project. You can directly copy and paste this into your `README.md` file:
+
+---
+
+````markdown
+## 🧭 MVC Architecture Overview
+
+This project follows the **Model-View-Controller (MVC)** design pattern:
+
+---
+
+### 🎮 Controller
+
+Controllers handle web requests and route them to the correct view or service logic. We use `ModelAndView` to pass data from controller to the view.
+
+#### Example:
+```java
+@GetMapping("/login")
+public String adminlogin() {
+    return "adminlogin"; // This loads src/main/webapp/adminlogin.jsp
+}
+````
+
+📌 So, when the `/login` URL is hit, the following file is rendered:
+`src/main/webapp/adminlogin.jsp`
+
+---
+
+### 📦 Models
+
+Model classes represent the structure of data (i.e., entities). These map directly to database tables using JPA annotations. Relationships between different entities (like User ↔ Orders) are defined here using `@OneToMany`, `@ManyToOne`, etc.
+
+---
+
+### 👁️ Views
+
+JSP pages located in:
+
 ```
+src/main/webapp/views
+```
+
+These views receive data from the controller and display it in the browser using standard HTML + JSP.
+
+---
+
+## 🌐 Key Endpoints
+
+| URL                                                                              | Description                |
+| -------------------------------------------------------------------------------- | -------------------------- |
+| [http://localhost:8080/](http://localhost:8080/)                                 | Home Page                  |
+| [http://localhost:8080/register](http://localhost:8080/register)                 | User Registration          |
+| [http://localhost:8080/admin/products](http://localhost:8080/admin/products)     | Admin: Product Management  |
+| [http://localhost:8080/admin/customers](http://localhost:8080/admin/customers)   | Admin: Customer List       |
+| [http://localhost:8080/admin/categories](http://localhost:8080/admin/categories) | Admin: Category Management |
+| [http://localhost:8080/admin/Dashboard](http://localhost:8080/admin/Dashboard)   | Admin Dashboard Overview   |
+
+---
+
+## 🌱 Spring Boot Resources
+
+For more details about Spring Boot, check out the official docs and guides:
+
+### 📘 Reference Documentation
+
+* [Apache Maven Documentation](https://maven.apache.org/guides/index.html)
+* [Spring Boot Maven Plugin Reference](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/)
+* [Creating OCI images with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/container-images.html)
+* [Spring Web Reference](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html)
+
+### 📚 Guides
+
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+
+---
+
+## 📸 Preview
+
+> *(Add a screenshot or demo video of your app here if available)*
+
+```
+
+---
+
+Let me know if you want me to integrate this into the full `README.md` or generate the file for you!
+```
+
 
 
